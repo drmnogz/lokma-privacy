@@ -10,150 +10,135 @@
   .container { max-width: 760px; margin: 0 auto; padding: 48px 24px; }
   .header { text-align: center; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 1px solid #e2e8f0; }
   .logo { display: flex; align-items: center; justify-content: center; gap: 8px; margin-bottom: 12px; }
-  .logo-circles { display: flex; align-items: center; }
   .c1 { width: 28px; height: 28px; background: #111; border-radius: 50%; }
   .c2 { width: 20px; height: 20px; background: #11111170; border-radius: 50%; margin-left: -6px; }
   .logo-name { font-size: 28px; font-weight: 700; letter-spacing: 6px; color: #111; }
   .header h1 { font-size: 18px; font-weight: 500; color: #64748b; margin-bottom: 6px; }
   .header p { font-size: 14px; color: #94a3b8; }
-  .notice { background: #fef9ec; border: 1px solid #fde68a; border-radius: 8px; padding: 14px 18px; font-size: 13px; color: #92400e; margin-bottom: 36px; }
   h2 { font-size: 18px; font-weight: 700; color: #111; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #111; }
   h3 { font-size: 15px; font-weight: 600; color: #1e293b; margin: 20px 0 8px; }
   p { font-size: 14px; color: #334155; margin-bottom: 10px; }
   ul { margin: 8px 0 12px 20px; }
   ul li { font-size: 14px; color: #334155; margin-bottom: 6px; line-height: 1.6; }
   .footer { text-align: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid #e2e8f0; font-size: 13px; color: #94a3b8; }
-  a { color: #1e293b; }
 </style>
 </head>
 <body>
 <div class="container">
-
   <div class="header">
     <div class="logo">
-      <div class="logo-circles"><div class="c1"></div><div class="c2"></div></div>
+      <div style="display:flex;align-items:center"><div class="c1"></div><div class="c2"></div></div>
       <span class="logo-name">LOKMA</span>
     </div>
     <h1>Kişisel Verilerin Korunması ve Gizlilik Politikası</h1>
     <p>Son Güncelleme: Nisan 2025 &nbsp;|&nbsp; Versiyon: 1.0</p>
   </div>
 
-  <div class="notice">Bu belge, 6698 sayılı Kişisel Verilerin Korunması Kanunu (KVKK) ve ilgili ikincil mevzuat kapsamında hazırlanmıştır.</div>
-
   <h2>1. Veri Sorumlusunun Kimliği</h2>
-  <p>Lokma (bundan böyle "Lokma" veya "Şirket" olarak anılacaktır), 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında veri sorumlusu sıfatını taşımaktadır.</p>
+  <p>Lokma, 6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında veri sorumlusu sıfatını taşımaktadır.</p>
   <ul>
-    <li><strong>Ticaret Ünvanı:</strong> Lokma</li>
-    <li><strong>Merkez Adresi:</strong> İstanbul, Türkiye</li>
-    <li><strong>İletişim E-postası:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="5a3e3f28373f34353d2f201a3d373b333674393537">[email&#160;protected]</a></li>
-    <li><strong>VERBİS Kayıt No:</strong> Kayıt sürecinde</li>
+    <li><strong>Ticaret Unvanı:</strong> Lokma</li>
+    <li><strong>Merkez Adresi:</strong> Istanbul, Turkiye</li>
+    <li><strong>Iletisim:</strong> lokmaspprt@gmail.com</li>
+    <li><strong>VERBiS Kayit No:</strong> Kayit surecinde</li>
   </ul>
 
   <h2>2. Gizlilik Politikasının Amacı ve Kapsamı</h2>
-  <p>Bu Gizlilik Politikası; Lokma mobil uygulaması ("Uygulama") ve ilgili hizmetlerin kullanımı sırasında toplanan kişisel verilerin işlenmesine ilişkin şeffaf bilgi sağlamak amacıyla hazırlanmıştır.</p>
-  <p>Politika; bireysel kullanıcıları (müşteriler), işletme hesabı sahiplerini ve uygulama ziyaretçilerini kapsamaktadır. Üçüncü taraf platformlara ait bağlantılar bu Politika kapsamı dışındadır.</p>
+  <p>Bu Gizlilik Politikası; Lokma mobil uygulaması ve ilgili hizmetlerin kullanımı sırasında toplanan kişisel verilerin işlenmesine ilişkin şeffaf bilgi sağlamak amacıyla hazırlanmıştır. Politika; bireysel kullanıcıları, işletme hesabı sahiplerini ve uygulama ziyaretçilerini kapsamaktadır.</p>
 
-  <h2>3. İşlenen Kişisel Veriler ve İşleme Amaçları</h2>
-  <h3>3.1 Bireysel Kullanıcılara İlişkin Veriler</h3>
+  <h2>3. İşlenen Kişisel Veriler</h2>
+  <h3>3.1 Bireysel Kullanıcılar</h3>
   <ul>
-    <li><strong>Kimlik Verileri:</strong> Ad, soyad</li>
-    <li><strong>İletişim Verileri:</strong> Telefon numarası</li>
-    <li><strong>Güvenlik Verileri:</strong> Şifrelenmiş parola (bcrypt hash), OTP doğrulama kaydı</li>
-    <li><strong>İşlem Verileri:</strong> Sipariş geçmişi, rezervasyon kayıtları, QR kod kullanım bilgisi</li>
-    <li><strong>Konum Verileri:</strong> Yakın çevre işletmelerini listelemek amacıyla anlık konum bilgisi (yalnızca uygulama ön plandeyken)</li>
-    <li><strong>Davranış Verileri:</strong> Uygulama içi etkileşimler, arama geçmişi, favori işletmeler</li>
-    <li><strong>Sadakat Verileri:</strong> Puan bakiyesi, kupon kullanım geçmişi</li>
-    <li><strong>Şikayet/Yorum Verileri:</strong> Kullanıcı tarafından paylaşılan değerlendirmeler</li>
+    <li><strong>Kimlik:</strong> Ad, soyad</li>
+    <li><strong>Iletisim:</strong> Telefon numarası</li>
+    <li><strong>Guvenlik:</strong> Sifrelenmis parola, OTP dogrulama kaydi</li>
+    <li><strong>Islem:</strong> Siparis gecmisi, rezervasyon kayitlari, QR kod kullanim bilgisi</li>
+    <li><strong>Konum:</strong> Yakin cevre isletmelerini listelemek amaciyla (yalnizca uygulama on plandeyken)</li>
+    <li><strong>Sadakat:</strong> Puan bakiyesi, kupon kullanim gecmisi</li>
+    <li><strong>Sikayet/Yorum:</strong> Kullanici tarafindan paylasilan degerlendirmeler</li>
   </ul>
-
-  <h3>3.2 İşletme Hesabı Sahiplerine İlişkin Veriler</h3>
+  <h3>3.2 İşletme Hesabı Sahipleri</h3>
   <ul>
-    <li><strong>Kimlik ve İletişim:</strong> İşletme sahibi adı, telefon numarası</li>
-    <li><strong>İşletme Bilgileri:</strong> İşletme adı, kategori, adres, coğrafi konum (enlem/boylam)</li>
-    <li><strong>Belge Verileri:</strong> Vergi levhası görüntüsü (onay sürecinde)</li>
-    <li><strong>Finansal Veriler:</strong> Kazanç özeti, komisyon hesaplamaları (ödeme sistemi entegre edildiğinde)</li>
-    <li><strong>Operasyonel Veriler:</strong> Paket içerikleri, fiyatlar, pickup saatleri, sipariş teslim kayıtları</li>
+    <li><strong>Kimlik ve Iletisim:</strong> Isletme sahibi adi, telefon numarasi</li>
+    <li><strong>Isletme Bilgileri:</strong> Isletme adi, kategori, adres, cografi konum</li>
+    <li><strong>Belge:</strong> Vergi levhasi goruntusu (onay surecinde)</li>
+    <li><strong>Operasyonel:</strong> Paket icerikleri, fiyatlar, pickup saatleri</li>
   </ul>
-
-  <h3>3.3 İşleme Amaçları ve Hukuki Dayanaklar</h3>
+  <h3>3.3 Hukuki Dayanaklar</h3>
   <ul>
-    <li><strong>Sözleşmenin ifası (KVKK Md. 5/2-c):</strong> Kayıt, sipariş ve teslim süreçlerinin yürütülmesi</li>
-    <li><strong>Meşru menfaat (KVKK Md. 5/2-f):</strong> Dolandırıcılık önleme, şikayet yönetimi, platform güvenliği</li>
-    <li><strong>Hukuki yükümlülük (KVKK Md. 5/2-ç):</strong> Vergi ve ticaret mevzuatı gereklilikleri</li>
-    <li><strong>Açık rıza (KVKK Md. 5/1):</strong> Sadakat programı, pazarlama bildirimleri (opsiyonel)</li>
+    <li>Sozlesmenin ifasi (KVKK Md. 5/2-c): Kayit, siparis ve teslim sureclerinin yurutulmesi</li>
+    <li>Mesru menfaat (KVKK Md. 5/2-f): Dolandiricilik onleme, sikayet yonetimi</li>
+    <li>Hukuki yukumluluk (KVKK Md. 5/2-c): Vergi ve ticaret mevzuati gereklilikleri</li>
   </ul>
 
   <h2>4. Veri Toplama Yöntemleri</h2>
   <ul>
-    <li><strong>Doğrudan Kullanıcıdan:</strong> Kayıt formu, profil güncelleme, işletme başvurusu</li>
-    <li><strong>Otomatik Toplama:</strong> Uygulama kullanımı sırasında cihaz konum bilgisi (izin verilmesi halinde)</li>
-    <li><strong>İşlem Süreçleri:</strong> Sipariş oluşturma, QR okutma, yorum bırakma eylemleri</li>
-    <li><strong>Üçüncü Taraf Servisler:</strong> Twilio (OTP doğrulama), Supabase (veri depolama), Railway (sunucu altyapısı)</li>
+    <li>Dogrudan kullanicidan: Kayit formu, profil guncelleme</li>
+    <li>Otomatik: Cihaz konum bilgisi (izin verilmesi halinde)</li>
+    <li>Ucuncu taraf servisler: Twilio (OTP), Supabase (veritabani), Railway (sunucu)</li>
   </ul>
 
   <h2>5. Veri Saklama Süreleri</h2>
   <ul>
-    <li>Kullanıcı hesap verileri: Hesap aktif olduğu sürece + hesap silinmesinden itibaren 3 yıl</li>
-    <li>Sipariş ve işlem kayıtları: 10 yıl (Vergi Usul Kanunu Madde 253 gereği)</li>
-    <li>OTP doğrulama logları: 90 gün</li>
-    <li>Şikayet ve yorum verileri: 5 yıl</li>
-    <li>İşletme belgeleri (vergi levhası): İş ilişkisi sona ermesinden itibaren 10 yıl</li>
-    <li>Güvenlik logları: 2 yıl</li>
+    <li>Kullanici hesap verileri: Hesap aktif oldugu surece + 3 yil</li>
+    <li>Siparis ve islem kayitlari: 10 yil (VUK Madde 253)</li>
+    <li>OTP dogrulama loglari: 90 gun</li>
+    <li>Sikayet ve yorum verileri: 5 yil</li>
+    <li>Isletme belgeleri: Is iliskisi sona ermesinden itibaren 10 yil</li>
+    <li>Guvenlik loglari: 2 yil</li>
   </ul>
-  <p>Saklama süresi sona eren veriler, KVKK Madde 7 kapsamında geri dönüşü olmayan biçimde silinir veya anonim hale getirilir.</p>
 
-  <h2>6. Kişisel Verilerin Aktarılması</h2>
-  <h3>6.1 Yurt İçi Aktarımlar</h3>
-  <p>Verileriniz, KVKK Madde 8 çerçevesinde yasal yükümlülüklerin yerine getirilmesi amacıyla yetkili kamu kurum ve kuruluşlarıyla paylaşılabilir.</p>
-
-  <h3>6.2 Yurt Dışı Aktarımlar</h3>
+  <h2>6. Veri Aktarımı</h2>
   <ul>
-    <li><strong>Supabase Inc. (ABD):</strong> Veritabanı ve kimlik doğrulama altyapısı</li>
-    <li><strong>Twilio Inc. (ABD):</strong> SMS OTP doğrulama hizmeti</li>
-    <li><strong>Railway Corp. (ABD):</strong> Uygulama sunucu barındırma</li>
+    <li><strong>Supabase Inc. (ABD):</strong> Veritabani ve kimlik dogrulama altyapisi</li>
+    <li><strong>Twilio Inc. (ABD):</strong> SMS OTP dogrulama hizmeti</li>
+    <li><strong>Railway Corp. (ABD):</strong> Uygulama sunucu barindarma</li>
   </ul>
 
-  <h2>7. Veri Güvenliği Tedbirleri</h2>
-  <h3>7.1 Teknik Tedbirler</h3>
+  <h2>7. Veri Güvenliği</h2>
   <ul>
-    <li>Tüm parolalar bcrypt algoritması ile hash'lenerek saklanmakta, düz metin olarak tutulmamaktadır</li>
-    <li>Sunucu iletişimleri TLS/HTTPS protokolü ile şifrelenmektedir</li>
-    <li>JWT token'ları 7 günlük süre sınırı ile kısıtlanmıştır</li>
-    <li>Rol tabanlı erişim kontrolü (RBAC) uygulanmaktadır</li>
-    <li>Supabase Row Level Security (RLS) ile veri izolasyonu sağlanmaktadır</li>
+    <li>Tum parolalar bcrypt ile hash'lenerek saklanmaktadir</li>
+    <li>Sunucu iletisimleri TLS/HTTPS ile sifrelenmektedir</li>
+    <li>JWT token'lari 7 gunluk sure siniri ile kisitlanmistir</li>
+    <li>Rol tabanli erisim kontrolu (RBAC) uygulanmaktadir</li>
+    <li>Supabase Row Level Security (RLS) ile veri izolasyonu saglanmaktadir</li>
   </ul>
 
-  <h3>7.2 İdari Tedbirler</h3>
-  <ul>
-    <li>Kişisel verilere erişim yalnızca yetkili personel ile sınırlıdır</li>
-    <li>Veri ihlali prosedürleri oluşturulmuştur</li>
-    <li>KVKK kapsamındaki ihlaller 72 saat içinde Kişisel Verileri Koruma Kurumu'na bildirilmektedir</li>
-  </ul>
-
-  <h2>8. İlgili Kişi Hakları</h2>
-  <p>KVKK Madde 11 kapsamında aşağıdaki haklara sahipsiniz:</p>
-  <ul>
-    <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
-    <li>İşlenmişse buna ilişkin bilgi talep etme</li>
-    <li>Eksik veya yanlış işlenmiş verilerin düzeltilmesini isteme</li>
-    <li>Verilerin silinmesini veya yok edilmesini talep etme</li>
-    <li>Hukuka aykırı işleme nedeniyle uğranılan zararın giderilmesini talep etme</li>
-  </ul>
-  <p>Bu haklarınızı kullanmak için <a href="/cdn-cgi/l/email-protection#d8bcbdaab5bdb6b7bfada298bfb5b9b1b4f6bbb7b5"><span class="__cf_email__" data-cfemail="d1b5b4a3bcb4bfbeb6a4ab91b6bcb0b8bdffb2bebc">[email&#160;protected]</span></a> adresine yazılı başvuruda bulunabilirsiniz. Başvurular 30 gün içinde yanıtlanır.</p>
+  <h2>8. Kullanıcı Hakları</h2>
+  <p>KVKK Madde 11 kapsaminda verilerinizin islenmesi, duzeltilmesi, silinmesi ve aktarilmasi konularinda haklarinizi kullanmak icin lokmaspprt@gmail.com adresine basvurabilirsiniz. Basvurular 30 gun icerisinde yanitlanir.</p>
 
   <h2>9. Cihaz İzinleri</h2>
   <ul>
-    <li><strong>Konum İzni:</strong> Yakın çevredeki işletme ve paketlerin listelenmesi amacıyla</li>
-    <li><strong>Kamera İzni:</strong> QR kod okutma ve işletme belgesi fotoğrafı yükleme amacıyla</li>
-    <li><strong>Bildirim İzni:</strong> Sipariş durumu ve paket uyarıları için (opsiyonel)</li>
+    <li><strong>Konum:</strong> Yakin cevre isletmelerin listelenmesi icin</li>
+    <li><strong>Kamera:</strong> QR kod okutma ve belge yukleme icin</li>
+    <li><strong>Bildirim:</strong> Siparis durumu bildirimleri icin (opsiyonel)</li>
   </ul>
 
   <h2>10. Çocukların Gizliliği</h2>
-  <p>Lokma hizmetleri 18 yaş ve üzeri bireyler için tasarlanmıştır. 18 yaşından küçük kişilerin hesap açması kabul edilmemektedir. Bildirim için <a href="/cdn-cgi/l/email-protection#8febeafde2eae1e0e8faf5cfe8e2eee6e3a1ece0e2"><span class="__cf_email__" data-cfemail="9ffbfaedf2faf1f0f8eae5dff8f2fef6f3b1fcf0f2">[email&#160;protected]</span></a> adresine ulaşabilirsiniz.</p>
+  <p>Lokma hizmetleri 18 yas ve uzeri bireyler icin tasarlanmistir. 18 yasindan kucuk kisilerin hesap acmasi kabul edilmemektedir.</p>
 
   <h2>11. Politika Güncellemeleri</h2>
-  <p>Bu Politika yasal değişiklikler doğrultusunda revize edilebilir. Önemli değişiklikler uygulama içi bildirim ile duyurulacaktır.</p>
+  <p>Bu Politika yasal degisiklikler dogrultusunda revize edilebilir. Onemli degisiklikler uygulama ici bildirim ile duyurulacaktir.</p>
 
   <h2>12. İletişim</h2>
   <ul>
-    <li><strong>E-posta:</strong> <a href="/cdn-cgi/l/email-protec
+    <li><strong>E-posta:</strong> lokmaspprt@gmail.com</li>
+    <li><strong>Adres:</strong> Istanbul, Turkiye</li>
+    <li><strong>KVKK Kurumu:</strong> www.kvkk.gov.tr</li>
+  </ul>
+
+  <h2 id="delete">13. Hesap Silme</h2>
+  <p>Hesabinizi ve ilgili verilerinizi silmek icin:</p>
+  <ul>
+    <li>Uygulama icinde Profil seceneginden hesabinizi silebilirsiniz.</li>
+    <li>Veya lokmaspprt@gmail.com adresine "Hesap Silme Talebi" konusuyla e-posta gonderebilirsiniz.</li>
+  </ul>
+  <p>Silme islemi 30 gun icinde tamamlanir. Siparis ve islem kayitlari yasal yukumlulukler geregi 10 yil saklanmaya devam eder.</p>
+
+  <div class="footer">
+    <p>Bu politika Nisan 2025 tarihi itibarıyla yürürlüktedir.</p>
+    <p>© 2025 Lokma — Tum haklari saklidir.</p>
+  </div>
+</div>
+</body>
+</html>
